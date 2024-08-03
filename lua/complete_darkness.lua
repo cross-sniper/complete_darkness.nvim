@@ -22,7 +22,11 @@ function M.setup()
   vim.cmd("syntax reset")
 
   vim.g.colors_name = "complete_darkness"
-  vim.o.background = "black"
+  
+  vim.o.background = "dark"
+  vim.o.termguicolors = true
+
+
   local highlight = function(group, color)
     local fg = color.fg and "guifg=" .. color.fg or "guifg=NONE"
     local bg = color.bg and "guibg=" .. color.bg or "guibg=NONE"
