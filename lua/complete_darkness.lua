@@ -1,10 +1,9 @@
-
 local M = {}
 
 function M.setup()
   -- Define the colors you want to use
   local colors = {
-    bg = "#000000", -- this does not work if the user has a backgroud wallpaper
+    bg = "#000000",
     fg = "#ffffff",
     red = "#ff0000",
     green = "#00ff00",
@@ -23,9 +22,9 @@ function M.setup()
 
   vim.g.colors_name = "complete_darkness"
   
+  -- Ensure the background is dark and terminal GUI colors are enabled
   vim.o.background = "dark"
   vim.o.termguicolors = true
-
 
   local highlight = function(group, color)
     local fg = color.fg and "guifg=" .. color.fg or "guifg=NONE"
@@ -34,8 +33,8 @@ function M.setup()
     vim.cmd(string.format("highlight %s %s %s %s", group, fg, bg, style))
   end
 
-  highlight("Normal", { fg = colors.fg, bg = colors.bg })
-  highlight("Insert", {fg=colors.fg, bg=colors.i})
+  highlight("Normal", { fg = colors.fg, bg = colors.bg }) -- Ensure the background is black
+  highlight("Insert", { fg = colors.fg, bg = colors.i })
   highlight("Comment", { fg = colors.green, style = "italic" })
   highlight("Constant", { fg = colors.cyan })
   highlight("String", { fg = colors.yellow })
