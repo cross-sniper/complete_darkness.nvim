@@ -1,0 +1,23 @@
+#+title: complete_darkness.nvim
+#+author: cross-sniper
+
+this is a custom colorscheme i made, just to make nvim a bit better on my eyes
+
+# installation
+
+to install this colorscheme, you need lazy.nvim
+
+add this to your plugins.lua(or anywhere else you install your plugins to
+
+#+begin_src lua
+return {
+    "cross-sniper/complete_darkness",
+    config = function()
+        require("complete_darkness").setup()
+    end
+}
+#+end_src
+
+# license
+
+MIT
