@@ -13,7 +13,8 @@ function M.setup()
     cyan = "#00ffff",
     white = "#ffffff",
     black = "#000000",
-    i = "#242424"
+    i = "#242424",
+    pink = "#2f002f"
   }
 
   -- Apply the colors to different highlight groups
@@ -36,6 +37,7 @@ function M.setup()
   highlight("Normal", { fg = colors.fg, bg = colors.bg }) -- Ensure the background is black
   highlight("Insert", { fg = colors.fg, bg = colors.i })
   highlight("Comment", { fg = colors.green, style = "italic" })
+  highlight*"Keyword", { fg = colors.pink, style = "bold"})
   highlight("Constant", { fg = colors.cyan })
   highlight("String", { fg = colors.yellow })
   highlight("Identifier", { fg = colors.blue })
