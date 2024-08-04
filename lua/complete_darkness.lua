@@ -14,7 +14,7 @@ function M.setup()
     white = "#ffffff",
     black = "#000000",
     i = "#242424",
-    pink = "#2f002f"
+    pink = "#ff69b4"
   }
 
   -- Apply the colors to different highlight groups
