@@ -47,6 +47,8 @@ function M.setup()
   highlight("Special", { fg = colors.magenta })
   highlight("Underlined", { fg = colors.blue, style = "underline" })
   highlight("Todo", { fg = colors.magenta, bg = colors.bg, style = "bold" })
+  highlight("PreProc", { fg = colors.pink, style = "bold" }) -- Preprocessor directives
+  highlight("Include", { fg = colors.blue }) -- #include directives
 end
 
 return M
