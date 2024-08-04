@@ -37,7 +37,7 @@ function M.setup()
   highlight("Normal", { fg = colors.fg, bg = colors.bg }) -- Ensure the background is black
   highlight("Insert", { fg = colors.fg, bg = colors.i })
   highlight("Comment", { fg = colors.green, style = "italic" })
-  highlight*"Keyword", { fg = colors.pink, style = "bold"})
+  highlight("Keyword", { fg = colors.pink, style = "bold"})
   highlight("Constant", { fg = colors.cyan })
   highlight("String", { fg = colors.yellow })
   highlight("Identifier", { fg = colors.blue })
